@@ -67,7 +67,7 @@ add_filter('embed_oembed_html', 'ld_cookie_consent_oembed_html', 10, 3);
 
 function ld_add_cookie_consent_scripts()
 {
-    wp_enqueue_script('ld-cookie-consent', LD_COOKIE_CONSENT_URL . '/js/ld-coockie-consent.js', false);
+    wp_enqueue_script('ld-cookie-consent', LD_COOKIE_CONSENT_URL . '/js/ld-cookie-consent.js', false);
 }
 add_action('wp_enqueue_scripts', 'ld_add_cookie_consent_scripts');
 
